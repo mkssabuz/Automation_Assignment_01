@@ -1,0 +1,16 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment config
+.env
+
+# Ignore build or dist folders
+dist/
+build/
+
+# Ignore OS or editor files
+.DS_Store
+*.swp
