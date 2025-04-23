@@ -6,8 +6,10 @@ describe('RIQS Login Test', () => {
     cy.get('#mat-input-0').type("testuserriqs001@yopmail.com")
     // Input Password
     cy.get('#mat-input-1').type("T@1234u")
+
     // Clik on Login Button
-    cy.get('button[aria-label="LOGIN"]').click()
+    cy.get('button[aria-label="LOGIN"]', {timeout: 5000}).click()
+
     // Logo Assertions
     cy.get('img[alt="hrs dept demo 1"]').should('be.visible')
   })
